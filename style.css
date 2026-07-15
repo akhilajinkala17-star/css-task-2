@@ -1,0 +1,135 @@
+/* Universal Selector */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Navigation */
+nav{
+    background:#333;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Header */
+header{
+    background:#4CAF50;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+/* Main */
+main{
+    display:flex;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 8px gray;
+    flex:1;
+}
+
+/* Footer */
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* ---------------- Mobile ---------------- */
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        margin-top:10px;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    header h1{
+        font-size:28px;
+    }
+
+    header p{
+        font-size:16px;
+    }
+
+    main{
+        flex-direction:column;
+    }
+}
+
+/* ---------------- Tablet ---------------- */
+@media (min-width:769px) and (max-width:1024px){
+
+    nav{
+        padding:15px;
+    }
+
+    main{
+        flex-direction:column;
+    }
+
+    header h1{
+        font-size:36px;
+    }
+}
+
+/* ---------------- Desktop ---------------- */
+@media (min-width:1025px){
+
+    nav{
+        padding:20px 50px;
+    }
+
+    header h1{
+        font-size:45px;
+    }
+
+    main{
+        display:flex;
+        justify-content:center;
+    }
+
+    .card{
+        max-width:500px;
+    }
+}
